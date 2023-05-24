@@ -1,0 +1,50 @@
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m config layout bsp
+
+# when new window is added it will split to opposite axis of the current window
+yabai -m config window_placement second_child
+
+# padding set to 12px
+yabai -m config top_padding 4
+yabai -m config bottom_padding 4
+yabai -m config left_padding 4
+yabai -m config right_padding 4
+yabai -m config window_gap 4
+
+# -- mouse settings --
+
+# center mouse on window with focus
+yabai -m config mouse_follows_focus on
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+# when window is dropped in center of another window, swap them (on edges it will split it)
+# yabai -m mouse_drop_action swap
+
+
+# disable specific apps
+yabai -m rule --add title="^Preview" manage=off
+yabai -m rule --add title="^Preferences" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^QuickTime Player$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+yabai -m rule --add app="^FaceTime$" manage=off
+yabai -m rule --add app="^Steam$" manage=off
+yabai -m rule --add app="^CrossOver$" manage=off
+
+# Useful optional stuff
+yabai -m config focus_follows_mouse autofocus
+yabai -m config window_shadow float
+yabai -m config window_border_width 1
+yabai -m config active_window_border_color  0xBF999999
+yabai -m config window_opacity on
+yabai -m config normal_window_opacity 0.9
+
