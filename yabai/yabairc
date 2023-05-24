@@ -39,6 +39,7 @@ yabai -m rule --add app="^Messages$" manage=off
 yabai -m rule --add app="^FaceTime$" manage=off
 yabai -m rule --add app="^Steam$" manage=off
 yabai -m rule --add app="^CrossOver$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
 
 # Useful optional stuff
 yabai -m config focus_follows_mouse autofocus
