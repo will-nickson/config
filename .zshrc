@@ -1,10 +1,14 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
+  source "$GHOSTTY_RESOURCES_DIR"/shell-integration/zsh/ghostty-integration
+fi
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
-export PATH="$HOME/.fig/bin:$PATH"
 
 export EDITOR='vim'
+
+setopt no_share_history
+unsetopt share_history
 
 # Alias
 alias ll='ls -la'
@@ -30,9 +34,30 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 set editing-mode vim
 
-[ -s ~/.fig/shell/fig.sh ] && source ~/.fig/shell/fig.sh
+# pnpm
+export PNPM_HOME="/Users/will/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-source /Users/will/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# Added by Antigravity
+export PATH="/Users/will/.antigravity/antigravity/bin:$PATH"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/Users/will/.bun/_bun" ] && source "/Users/will/.bun/_bun"
+
+# opencode
+export PATH=/Users/will/.opencode/bin:$PATH
