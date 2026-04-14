@@ -1,0 +1,47 @@
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "alt-'": "editor::ExpandAllDiffHunks",
+            "shift-up": "editor::SelectLargerSyntaxNode",
+            "shift-down": "editor::SelectSmallerSyntaxNode",
+        },
+    },
+    {
+        "context": "Editor && edit_prediction",
+        "bindings": {
+            "tab": "editor::AcceptEditPrediction",
+        },
+    },
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "m": "project_panel::CollapseAllEntries",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "ctrl-c": "vim::NormalBefore",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == visual",
+        "bindings": {
+            "ctrl-c": "vim::NormalBefore",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            "ctrl-c": "vim::NormalBefore",
+        },
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-r": "workspace::ToggleRightDock",
+            "cmd-j": "workspace::ToggleBottomDock",
+        },
+    },
+]
