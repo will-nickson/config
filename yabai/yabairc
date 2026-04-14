@@ -3,7 +3,7 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 yabai -m config layout bsp
 
 # when new window is added it will split to opposite axis of the current window
-yabai -m config window_placement second_child
+# yabai -m config window_placement second_child
 
 # padding set to 12px
 yabai -m config top_padding 4
@@ -30,7 +30,9 @@ yabai -m config mouse_action2 resize
 # disable specific apps
 yabai -m rule --add title="^Preview$" manage=off
 yabai -m rule --add title="^Preferences$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
@@ -39,9 +41,20 @@ yabai -m rule --add app="^FaceTime$" manage=off
 yabai -m rule --add app="^Steam$" manage=off
 yabai -m rule --add app="^CrossOver$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^zoom.us$" manage=off
+yabai -m rule --add app="^Logi Options$" manage=off
+yabai -m rule --add app="^Logitech Unifying Software$" manage=off
+yabai -m rule --add app="^Installer$" manage=off
+yabai -m rule --add app="^Hotspot Shield$" manage=off
+yabai -m rule --add app="^WhatsApp$" manage=off
+yabai -m rule --add app="^Notes$" manage=off
+yabai -m rule --add app="^Rectangle$" manage=off
+yabai -m rule --add app="^Logi Options\+$" manage=off
+yabai -m rule --add app="^LogiTune$" manage=off
+yabai -m rule --add app="^Terminal$" manage=off
 
 # Useful optional stuff
-yabai -m config focus_follows_mouse autofocus
+# yabai -m config focus_follows_mouse autofocus
 yabai -m config window_shadow float
 yabai -m config window_border_width 1
 yabai -m config active_window_border_color  0xBF999999
