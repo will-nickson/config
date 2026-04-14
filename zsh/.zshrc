@@ -4,6 +4,10 @@ fi
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/Users/will/.antigravity/antigravity/bin:$PATH"
+export PATH=/Users/will/.opencode/bin:$PATH
 
 export EDITOR='vim'
 
@@ -24,7 +28,7 @@ precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
 zstyle ':vcs_info:git:*' formats '%b'
- 
+
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 
@@ -42,14 +46,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
-
-
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
-
-# Added by Antigravity
-export PATH="/Users/will/.antigravity/antigravity/bin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -58,6 +55,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # bun completions
 [ -s "/Users/will/.bun/_bun" ] && source "/Users/will/.bun/_bun"
-
-# opencode
-export PATH=/Users/will/.opencode/bin:$PATH
