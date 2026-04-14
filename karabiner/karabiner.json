@@ -6,6 +6,7 @@
                 "rules": [
                     {
                         "description": "Disable Control+A",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -150,7 +151,6 @@
                         "description": "Vim Word-wise Navigation with Control + Option",
                         "manipulators": [
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
@@ -163,10 +163,10 @@
                                         "key_code": "left_arrow",
                                         "modifiers": ["option"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -179,10 +179,10 @@
                                         "key_code": "right_arrow",
                                         "modifiers": ["option"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
@@ -195,10 +195,10 @@
                                         "key_code": "down_arrow",
                                         "modifiers": ["option"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -211,19 +211,23 @@
                                         "key_code": "up_arrow",
                                         "modifiers": ["option"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Vim Word-wise Navigation with Control + Option + Shift",
+                        "description": "Vim Word-wise Highlighting with Control + Option + Shift",
                         "manipulators": [
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
-                                        "mandatory": ["control", "option", "shift"],
+                                        "mandatory": [
+                                            "control",
+                                            "option",
+                                            "shift"
+                                        ],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -232,14 +236,18 @@
                                         "key_code": "left_arrow",
                                         "modifiers": ["option", "shift"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
-                                        "mandatory": ["control", "option", "shift"],
+                                        "mandatory": [
+                                            "control",
+                                            "option",
+                                            "shift"
+                                        ],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -248,14 +256,18 @@
                                         "key_code": "right_arrow",
                                         "modifiers": ["option", "shift"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
-                                        "mandatory": ["control", "option", "shift"],
+                                        "mandatory": [
+                                            "control",
+                                            "option",
+                                            "shift"
+                                        ],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -264,14 +276,18 @@
                                         "key_code": "down_arrow",
                                         "modifiers": ["option", "shift"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
-                                        "mandatory": ["control", "option", "shift"],
+                                        "mandatory": [
+                                            "control",
+                                            "option",
+                                            "shift"
+                                        ],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -280,7 +296,8 @@
                                         "key_code": "up_arrow",
                                         "modifiers": ["option", "shift"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
@@ -288,7 +305,6 @@
                         "description": "Vim Line-wise Navigation with Control + Command",
                         "manipulators": [
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
@@ -301,10 +317,10 @@
                                         "key_code": "left_arrow",
                                         "modifiers": ["command"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -317,51 +333,23 @@
                                         "key_code": "right_arrow",
                                         "modifiers": ["command"]
                                     }
-                                ]
-                            },
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": ["control", "command"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": ["command"]
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": ["control", "command"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": ["command"]
-                                    }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Vim Line-wise Navigation with Control + Command + Shift",
+                        "description": "Vim Line-wise Highlighting with Control + Command + Shift",
                         "manipulators": [
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
-                                        "mandatory": ["control", "command", "shift"],
+                                        "mandatory": [
+                                            "control",
+                                            "command",
+                                            "shift"
+                                        ],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -370,14 +358,18 @@
                                         "key_code": "left_arrow",
                                         "modifiers": ["command", "shift"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
-                                        "mandatory": ["control", "command", "shift"],
+                                        "mandatory": [
+                                            "control",
+                                            "command",
+                                            "shift"
+                                        ],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -386,39 +378,8 @@
                                         "key_code": "right_arrow",
                                         "modifiers": ["command", "shift"]
                                     }
-                                ]
-                            },
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": ["control", "command", "shift"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": ["command", "shift"]
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": ["control", "command", "shift"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": ["command", "shift"]
-                                    }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
@@ -430,23 +391,6 @@
                         "is_keyboard": true,
                         "product_id": 1546,
                         "vendor_id": 21057
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "grave_accent_and_tilde" },
-                            "to": [{ "key_code": "non_us_backslash" }]
-                        },
-                        {
-                            "from": { "key_code": "non_us_backslash" },
-                            "to": [{ "key_code": "grave_accent_and_tilde" }]
-                        }
-                    ]
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 641,
-                        "vendor_id": 1452
                     },
                     "simple_modifications": [
                         {
@@ -487,10 +431,11 @@
                     "to": [{ "key_code": "non_us_backslash" }]
                 },
                 {
-                    "from": { "key_code": "non_us_backslash" },
-                    "to": [{ "key_code": "grave_accent_and_tilde" }]
+                    "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
+                    "to": [{ "key_code": "vk_none" }]
                 }
-            ]
+            ],
+            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
         }
     ]
 }
