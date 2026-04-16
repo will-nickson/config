@@ -19,6 +19,20 @@ $ defaults write -g com.apple.trackpad.scaling 10.0
 System Settings -> Desktop & Dock -> Mission Control ->
 System Settings -> Accessibility -> Display -> Reduce Motion -> ON
 
-** SYSTEM KEYBOARD **
-Shortcuts -> Mission Control -> Switch to Desktop 1 / 2 / 3 etc… -> ON
+** KEYBOARD **
+Keyboard Shortcuts -> App Shortcuts -> [All Applications] -> Menu title: "Hide Sidebar", Keyboard shortcut: ⌘B
+Keyboard Shortcuts -> App Shortcuts -> [All Applications] -> Menu title: "Show/hide sidebar", Keyboard shortcut: ⌘B
+Keyboard Shortcuts -> App Shortcuts -> [All Applications] -> Menu title: "Show Sidebar", Keyboard shortcut: ⌘B
+Keyboard Shortcuts -> App Shortcuts -> [All Applications] -> Menu title: "Toggle Sidebar", Keyboard shortcut: ⌘B
+
+Keyboard Shortcuts -> App Shortcuts -> [Notes] -> Menu title: "Hide Sidebar", Keyboard shortcut: ⌘B
+Keyboard Shortcuts -> App Shortcuts -> [Notes] -> Menu title: "Show Sidebar", Keyboard shortcut: ⌘B
+
+Keyboard Shortcuts -> App Shortcuts -> [Notion] -> Menu title: "Show/hide sidebar", Keyboard shortcut: ⌘B
+
+Keyboard Shortcuts -> App Shortcuts -> [Safari] -> Menu title: "Hide Sidebar", Keyboard shortcut: ⌘B
+Keyboard Shortcuts -> App Shortcuts -> [Safari] -> Menu title: "Show Sidebar", Keyboard shortcut: ⌘B
+
+Keyboard Shortcuts -> App Shortcuts -> [Things] -> Menu title: "Hide Sidebar", Keyboard shortcut: ⌘B
+Keyboard Shortcuts -> App Shortcuts -> [Things] -> Menu title: "Show Sidebar", Keyboard shortcut: ⌘B
 ```
