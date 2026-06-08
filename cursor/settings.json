@@ -1,0 +1,112 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.autoFormatConfigFile": true,
+    "cSpell.customDictionaries": {
+        "custom-dictionary-user": {
+            "addWords": true,
+            "name": "custom-dictionary-user",
+            "path": "~/.cspell/custom-dictionary-user.txt",
+            "scope": "user"
+        }
+    },
+    "cSpell.ignoreWords": ["Trippp", "intity", "zustand"],
+    "cSpell.language": "en-GB",
+    "cSpell.userWords": [
+        "airtable",
+        "cloudinary",
+        "Favourited",
+        "fontsource",
+        "Goodhood",
+        "Nickson",
+        "Subnav",
+        "tailwindcss",
+        "upstash",
+        "youtube",
+        "tailwind",
+        "@tailwind"
+    ],
+    "catppuccin-noctis-icons.hidesExplorerArrows": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "cursor.composer.editorConversationDensity": "compact-ungrouped",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always"
+    },
+    "editor.fontFamily": "Geist Mono",
+    "editor.fontSize": 13,
+    "editor.formatOnSave": true,
+    "editor.accessibilitySupport": "off",
+    "editor.detectIndentation": true,
+    "editor.folding": true,
+    "editor.glyphMargin": false,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.occurrencesHighlight": "multiFile",
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.rulers": [80],
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.stickyScroll.enabled": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 1,
+    "files.autoSave": "onFocusChange",
+    "git.closeDiffOnOperation": true,
+    "git.defaultBranchName": "master",
+    "git.suggestSmartCommit": false,
+    "git.autofetch": true,
+    "git.terminalAuthentication": false,
+    "git.terminalGitEditor": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.bracketSameLine": true,
+    "prettier.configPath": ".prettierrc.json",
+    "prettier.proseWrap": "never",
+    "prettier.requireConfig": true,
+    "prettier.tabWidth": 4,
+    "redhat.telemetry.enabled": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.environmentChangesRelaunch": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "monospace",
+    "update.showReleaseNotes": false,
+    "vim.useSystemClipboard": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vimrc",
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#a8a6a6ac",
+        "editorLineNumber.foreground": "#9999993a",
+        "tab.activeBorder": "#61afef"
+    },
+    "workbench.colorTheme": "Cursor Dark Midnight",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.showIcons": true,
+    "workbench.settings.applyToAllProfiles": [
+        "prettier.configPath",
+        "editor.defaultFormatter"
+    ],
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": false,
+    "workbench.agentsWindowButton.enabled": false,
+    "workbench.iconTheme": "catppuccin noctis icons",
+    "window.autoDetectColorScheme": false
+}
