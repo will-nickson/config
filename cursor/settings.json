@@ -41,7 +41,7 @@
         "source.organizeImports": "always"
     },
     "editor.fontFamily": "Geist Mono",
-    "editor.fontSize": 13,
+    "editor.fontSize": 12.5,
     "editor.formatOnSave": true,
     "editor.accessibilitySupport": "off",
     "editor.detectIndentation": true,
@@ -50,7 +50,7 @@
     "editor.guides.bracketPairs": true,
     "editor.guides.bracketPairsHorizontal": false,
     "editor.hideCursorInOverviewRuler": true,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.occurrencesHighlight": "multiFile",
     "editor.overviewRulerBorder": false,
@@ -79,10 +79,7 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.environmentChangesRelaunch": true,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1"
-    },
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.fontFamily": "monospace",
     "update.showReleaseNotes": false,
     "vim.useSystemClipboard": true,
