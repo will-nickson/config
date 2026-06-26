@@ -46,7 +46,7 @@
     "editor.accessibilitySupport": "off",
     "editor.detectIndentation": true,
     "editor.folding": true,
-    "editor.glyphMargin": false,
+    "editor.glyphMargin": true,
     "editor.guides.bracketPairs": true,
     "editor.guides.bracketPairsHorizontal": false,
     "editor.hideCursorInOverviewRuler": true,
