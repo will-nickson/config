@@ -12,6 +12,7 @@
     "diff_view_style": "unified",
     "project_panel": {
         "dock": "left",
+        "auto_reveal_entries": true,
     },
     "outline_panel": {
         "button": false,
