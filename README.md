@@ -8,10 +8,10 @@ $ killall Dock
 
 $ defaults read -g com.apple.mouse.scaling
 $ defaults write -g com.apple.mouse.scaling  7.0
-*restart*
 
 $ defaults read -g com.apple.trackpad.scaling
-$ defaults write -g com.apple.trackpad.scaling 10.0
+$ defaults write -g com.apple.trackpad.scaling 12.0
+
 *restart*
 
 
