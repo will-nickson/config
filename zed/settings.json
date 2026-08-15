@@ -1,25 +1,63 @@
 {
+    "search": {
+        "button": false,
+    },
+    "global_lsp_settings": {
+        "button": false,
+    },
+    "status_bar": {
+        "active_language_button": false,
+        "cursor_position_button": false,
+    },
+    "diff_view_style": "unified",
+    "project_panel": {
+        "dock": "left",
+    },
+    "outline_panel": {
+        "button": false,
+        "dock": "left",
+    },
+    "git_panel": {
+        "dock": "left",
+    },
     "edit_predictions": {
         "provider": "zed",
         "mode": "subtle",
     },
     "diagnostics": {
+        "button": false,
         "inline": {
             "update_debounce_ms": 100,
         },
     },
     "agent": {
+        "notify_when_agent_waiting": "never",
+        "favorite_models": [
+            {
+                "provider": "openai",
+                "model": "gpt-5.6-sol",
+                "enable_thinking": true,
+                "effort": "low",
+            },
+            {
+                "provider": "opencode",
+                "model": "free/big-pickle",
+                "enable_thinking": false,
+            },
+        ],
+        "button": false,
+        "sidebar_side": "right",
+        "dock": "right",
         "default_model": {
-            "provider": "google",
-            "model": "gemini-2.5-flash",
+            "enable_thinking": false,
+            "provider": "opencode",
+            "model": "free/big-pickle",
         },
-        "default_profile": "write",
+        "default_profile": "ask",
         "model_parameters": [],
     },
     "collaboration_panel": {
-        "dock": "right",
-    },
-    "notification_panel": {
+        "button": false,
         "dock": "right",
     },
     "terminal": {
@@ -79,7 +117,7 @@
     "buffer_font_size": 14,
     "buffer_font_family": "Geist Mono",
     "soft_wrap": "none",
-    // "preferred_line_length": 80,
+    "preferred_line_length": 80,
     "wrap_guides": [80],
     "show_wrap_guides": true,
     "tab_size": 4,
