@@ -10,7 +10,7 @@ $ defaults read -g com.apple.mouse.scaling
 $ defaults write -g com.apple.mouse.scaling  7.0
 
 $ defaults read -g com.apple.trackpad.scaling
-$ defaults write -g com.apple.trackpad.scaling 16.0
+$ defaults write -g com.apple.trackpad.scaling 20.0
 
 *restart*
 
